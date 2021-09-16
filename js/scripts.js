@@ -39,6 +39,8 @@ const container = document.querySelector(".img-container");
 btn.addEventListener("click", function (e) {
   e.preventDefault();
   const img = document.createElement("img");
+  img.setAttribute("referrerpolicy", "no-referrer");
+  img.src = "https://i.imgur.com/tkvLDAH.gif";
   img.setAttribute("class", "random-img");
   img.src = `https://picsum.photos/seed/{${Math.random()}}picsum/400/400`;
   container.appendChild(img);
