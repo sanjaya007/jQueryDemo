@@ -1,0 +1,289 @@
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+body {
+  background-color: #121212;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-bar {
+  background-color: #121212;
+}
+
+.link-container a {
+  color: #f1f1f1;
+  text-decoration: none;
+  padding: 0 10px !important;
+}
+
+.toggle-box {
+  border: 0.5px solid #f1f1f1;
+  border-radius: 4px;
+  display: none;
+}
+
+.toggle-box i {
+  color: #f1f1f1;
+}
+
+.side-nav {
+  background-color: #121212ec;
+  max-width: 270px;
+  min-width: 270px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100vh;
+  /* display: none; */
+  left: -100%;
+  opacity: 0;
+}
+
+.mobile-link a {
+  color: #f1f1f1;
+  text-decoration: none;
+  padding: 0 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.close-box {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.close-box i {
+  color: #f1f1f1;
+}
+
+.main-container {
+  background-color: #121212;
+}
+
+.image-container {
+  width: 700px;
+  height: 500px;
+}
+
+.image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.dummy-container {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 30px !important;
+}
+
+.dummy-container:hover {
+  box-shadow: 5px 5px 10px #ffffff36;
+}
+
+.dummy-container:active {
+  transform: scale(0.95);
+}
+
+.dummy-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(80%);
+}
+
+.Allquestions p {
+  color: #f1f1f1;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.288);
+}
+
+.ques {
+  color: #f1f1f1;
+}
+
+.scrollques {
+  cursor: pointer;
+}
+
+.scrollans {
+  color: #f1f1f1;
+  display: none;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #353535;
+  height: 40px;
+  width: 40px;
+  display: none;
+}
+
+.scroll-top > div {
+  height: 100%;
+  width: 100%;
+}
+
+.scroll-top i {
+  color: #f1f1f1;
+}
+
+.count p {
+  color: #f1f1f1;
+}
+
+.faq-container h1 {
+  color: #f1f1f1;
+  font-size: 22px;
+  position: relative;
+  display: inline-block;
+}
+
+.faq-container h1::after {
+  content: "";
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+}
+
+.faq-container h1::before {
+  content: "";
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 50%;
+  height: 2px;
+  bottom: -12px;
+  left: 0;
+}
+
+.faq-container .faq-box .question-box {
+  background-color: #181818;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  padding-left: 40px !important;
+}
+
+.faq-container .faq-box .question-box .pointer-icon {
+  color: #f1f1f1;
+  position: absolute;
+  left: 10px;
+}
+
+.faq-container .faq-box .question-box .pointer-icon.rotate {
+  transform: rotate(90deg);
+}
+
+.faq-container .faq-box .question-box p {
+  color: #f1f1f1;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.faq-container .faq-box .answer-box {
+  background-color: #181818;
+  cursor: pointer;
+  border-radius: 0 0 10px 10px;
+  border-top: 1px solid #494949;
+}
+
+.faq-container .faq-box .answer-box p {
+  color: #e6e1e1;
+  font-size: 12px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem !important;
+}
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.random-img {
+  margin: 20px 35px !important;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.btn-container a {
+  text-decoration: none;
+  background-color: #252627;
+  padding: 10px 30px !important;
+  font-family: cursive;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: #f1f1f1;
+}
+
+.btn-container a:hover {
+  background-color: #222222;
+}
+
+.btn-container a:active {
+  background-color: rgb(39, 39, 39);
+}
+
+.input-box select,
+.input-box .social-input {
+  margin-bottom: 20px !important;
+  background-color: #555;
+  color: #f1f1f1;
+  width: 250px;
+  font-size: 12px;
+  padding: 10px 15px !important;
+  border: none;
+  outline: none;
+}
+
+.input-box label {
+  color: #f1f1f1;
+  font-size: 12px;
+  margin-right: 7px !important;
+}
+
+.input-box .social-input::placeholder {
+  color: #b6b6b6;
+}
+
+.get-btn button {
+  background-color: #2b2b2b;
+  color: #f1f1f1;
+  border: none;
+  outline: none;
+  padding: 10px 20px !important;
+}
+
+th,
+td {
+  padding: 10px 15px !important;
+}
+
+@media (max-width: 767px) {
+  .link-container,
+  .logo-container {
+    display: none;
+  }
+  .toggle-box {
+    display: block;
+  }
+}

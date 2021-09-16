@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gallery</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/sanjaya007/flex-library@master/dist/css/sanjaya.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="nav-bar flex-css-row-sb py-2 px-3 mb-4" id="navbar">
+      <div class="toggle-box px-2 py-1" id="toggle-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="logo-container">
+        <img src="./logo.png" alt="logo" />
+      </div>
+      <div class="link-container">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Login</a>
+      </div>
+    </div>
+
+    <div class="side-nav py-4 px-3" id="mobile-nav">
+      <div class="close-box" id="close-btn">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="mobile-logo mb-3">
+        <img src="./logo.png" alt="logo" />
+      </div>
+      <div class="mobile-link flex-top-column-start">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Login</a>
+      </div>
+    </div>
+
+    <div class="container-fluid flex-css main-container">
+      <div class="image-container">
+        <img
+          src="./img1.jpg"
+          alt="dummy"
+          class="img-fluid img-responsive"
+          id="image-container"
+        />
+      </div>
+    </div>
+
+    <div class="container-fluid count flex-css pt-3">
+      <p><span id="count-img">1</span>/4</p>
+    </div>
+
+    <div class="container-fluid py-5">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="dummy-image flex-css">
+            <div class="dummy-container">
+              <img
+                class="image-list"
+                src="./img1.jpg"
+                alt="dummy"
+                data-id="1"
+                style="border: 5px solid #f1f1f1; filter: grayscale(0%)"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="dummy-image flex-css">
+            <div class="dummy-container">
+              <img
+                class="image-list"
+                src="./img2.jpg"
+                alt="dummy"
+                data-id="2"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="dummy-image flex-css">
+            <div class="dummy-container">
+              <img
+                class="image-list"
+                src="./img3.jpg"
+                alt="dummy"
+                data-id="3"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="dummy-image flex-css">
+            <div class="dummy-container">
+              <img
+                class="image-list"
+                src="./img4.jpg"
+                alt="dummy"
+                data-id="4"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container faq-container mx-auto mb-5">
+      <div class="faq-heading flex-css">
+        <h1 class="text-center mb-5">All Questions</h1>
+      </div>
+      <div class="faq-box mb-4">
+        <div class="question-box p-3">
+          <span class="pointer-icon">
+            <i class="fas fa-hand-point-right"></i>
+          </span>
+          <p>
+            First you throw away my outside and cook the inside. Then you eat my
+            outside and throw away my inside. What am I?
+          </p>
+        </div>
+        <div class="answer-box p-3" style="display: none">
+          <p>
+            Corn on the cob. Because you throw away the husk, cook the corn.
+            Then you eat the kernels, and throw away the cob.
+          </p>
+        </div>
+      </div>
+      <div class="faq-box mb-4">
+        <div class="question-box p-3">
+          <span class="pointer-icon">
+            <i class="fas fa-hand-point-right"></i>
+          </span>
+          <p>
+            First you throw away my outside and cook the inside. Then you eat my
+            outside and throw away my inside. What am I?
+          </p>
+        </div>
+        <div class="answer-box p-3" style="display: none">
+          <p>
+            Corn on the cob. Because you throw away the husk, cook the corn.
+            Then you eat the kernels, and throw away the cob.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="generator">
+      <div class="btn-container">
+        <a href="#" class="generate"> Generate </a>
+      </div>
+      <div class="img-container"></div>
+    </div>
+
+    <div class="container-fluid input-box flex-css py-5">
+      <div class="input-container flex-top-column">
+        <select id="select-input">
+          <option value="Facebook">Facebook</option>
+          <option value="Instagram">Instagram</option>
+          <option value="Twitter">Twitter</option>
+          <option value="Redeit">Redeit</option>
+        </select>
+        <div class="check flex-css-row mb-3">
+          <label for="asd">View Data: </label>
+          <input
+            type="checkbox"
+            checked="checked"
+            name="checkbox"
+            class="checkbox-input"
+          />
+        </div>
+        <input
+          type="text"
+          class="social-input"
+          placeholder="social media...."
+        />
+      </div>
+    </div>
+
+    <div class="container-fluid mb-5">
+      <div class="get-btn flex-css mb-4">
+        <button class="ajax-btn">Ajax Call</button>
+      </div>
+      <div class="container table-container mx-auto px-4" style="display: none">
+        <table class="table table-striped table-dark">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Title</th>
+              <th scope="col">Product Type</th>
+            </tr>
+          </thead>
+          <tbody class="table-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="scroll-top flex-css">
+      <div class="flex-css">
+        <a href="#navbar">
+          <i class="fas fa-chevron-up"></i>
+        </a>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
